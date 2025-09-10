@@ -10,7 +10,16 @@
 
   <meta name="description" content="Online service to encrypt your data using AES 128 encryption (a plain text, email encryption, facebook messages, twitter, IM messages, etc)">
   <meta name="keywords" content="encrypt, free, online, decrypt, blowfish, security, password, service, aes, aes 128">
-
+  <script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}    
+  </script>
   <style type="text/css">* {}</style>
   <script id="facebook-jssdk" src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/all.js"></script>
   <script src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/libs.min.js" type="text/javascript"></script>
@@ -167,14 +176,11 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 form-actions">
                                 <button type="submit" name="submit" value="Encrypt" class="btn btn-primary disabled" ng-click="doEncrypt($event)" ng-class="{&#39;disabled&#39;: !(haveMessage &amp;&amp; havePass &amp;&amp; havePassConfirmed)}">
-                                    <i ng-class="{&#39;icon-lock&#39;: !encrypting, &#39;icon-spinner&#39;: encrypting, &#39;icon-spin&#39;: encrypting}" class="icon-lock"></i> Encrypt
+                                    <i onclick="let a=this.parentElement.children[0];(a.type==='password')?a.setAttribute('type','text'):a.setAttribute('type','password')" ng-class="{&#39;icon-lock&#39;: !encrypting, &#39;icon-spinner&#39;: encrypting, &#39;icon-spin&#39;: encrypting}" class="icon-lock"></i> Encrypt
                                 </button>
                                 <strong>Or</strong>
                                 <button type="submit" name="submit" value="Decrypt" class="btn btn-primary disabled" ng-click="doDecrypt($event)" ng-class="{&#39;disabled&#39;: !haveMessage}">
-                                    <i ng-class="{&#39;icon-unlock&#39;: !decrypting, &#39;icon-spinner&#39;: decrypting, &#39;icon-spin&#39;: decrypting}" class="icon-unlock"></i> Decrypt
-                                </button>
-                                <button name="safe" value="Put to Safe" class="btn btn-primary ng-hide" style="margin-left: 20px" ng-click="showSafeDlg($event)" ng-show="haveMessage">
-                                    <i class="icon-cloud-upload"></i> Put to safe
+                                    <i onclick="let a=this.parentElement.children[0];(a.type==='password')?a.setAttribute('type','text'):a.setAttribute('type','password')" ng-class="{&#39;icon-unlock&#39;: !decrypting, &#39;icon-spinner&#39;: decrypting, &#39;icon-spin&#39;: decrypting}" class="icon-unlock"></i> Decrypt
                                 </button>
                             </div>
 
