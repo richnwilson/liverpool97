@@ -19,7 +19,7 @@
 <body>
 
 
-<div id="content" class="container">
+<div id="content" class="container" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
         <script src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/app.min.js" type="text/javascript"></script>
 
 
@@ -142,15 +142,19 @@
                             <div class="col-lg-3 col-md-3 col-sm-3" ng-class="{&#39;has-error&#39;: haveMessage &amp;&amp; !havePass}">
                                 <label>
                                     Password
+                                  <span style="display:flex;">
                                     <input type="password" name="password" class="form-control ng-pristine ng-valid" ng-model="password" />
-                                    <span onclick="let a=this.parentElement.children[0];(a.type==='password')?a.setAttribute('type','text'):a.setAttribute('type','password')" style=cursor:help>👁</span>
+                                    <span onclick="let a=this.parentElement.children[0];(a.type==='password')?a.setAttribute('type','text'):a.setAttribute('type','password')" style="cursor:help;margin-left: 0.5em; line-height: 2.2em;">👁</span>
+                                  </span>
                                 </label>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-3" ng-class="{&#39;has-error&#39;: havePass &amp;&amp; !havePassConfirmed &amp;&amp; password2.length &gt; 0}">
                                 <label>
                                     Confirm Password
+                                    <span style="display:flex;">
                                     <input type="password" name="password2" class="form-control ng-pristine ng-valid" ng-model="password2"/>
-                                    <span onclick="let a=this.parentElement.children[0];(a.type==='password')?a.setAttribute('type','text'):a.setAttribute('type','password')" style=cursor:help>👁</span>
+                                    <span onclick="let a=this.parentElement.children[0];(a.type==='password')?a.setAttribute('type','text'):a.setAttribute('type','password')" style="cursor:help;margin-left: 0.5em; line-height: 2.2em;">👁</span>                                      
+                                    </span>
                                 </label>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6 form-actions">
