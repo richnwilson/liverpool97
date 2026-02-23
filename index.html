@@ -1,179 +1,342 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!-- saved from url=(0028)https://www.infoencrypt.com/ -->
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" ng-app="infoencrypt" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>
-  <title>Online AES 128 Encrypt and Decrypt - Infoencrypt.Com</title>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  lang="en"
+  xml:lang="en"
+  ng-app="infoencrypt"
+  class="ng-scope"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+      @charset "UTF-8";
+      [ng\:cloak],
+      [ng-cloak],
+      [data-ng-cloak],
+      [x-ng-cloak],
+      .ng-cloak,
+      .x-ng-cloak,
+      .ng-hide {
+        display: none !important;
+      }
+      ng\:form {
+        display: block;
+      }
+      .ng-animate-block-transitions {
+        transition: 0s all !important;
+        -webkit-transition: 0s all !important;
+      }
+      .ng-hide-add-active,
+      .ng-hide-remove {
+        display: block !important;
+      }
+    </style>
+    <title>Online AES 128 Encrypt and Decrypt - Infoencrypt.Com</title>
 
-  <link href="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/css" rel="stylesheet" type="text/css">
-  <link href="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/default.css" rel="stylesheet" type="text/css">
-<!--   <link href="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/font-awesome.css" rel="stylesheet" type="text/css"> -->
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link
+      href="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/default.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--   <link href="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/font-awesome.css" rel="stylesheet" type="text/css"> -->
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
 
-  <meta name="description" content="Online service to encrypt your data using AES 128 encryption (a plain text, email encryption, facebook messages, twitter, IM messages, etc)">
-  <meta name="keywords" content="encrypt, free, online, decrypt, blowfish, security, password, service, aes, aes 128">
-  <style type="text/css">* {}</style>
-<!--   <script id="facebook-jssdk" src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/all.js"></script> -->
-  <script src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/libs.min.js" type="text/javascript"></script>
+    <meta
+      name="description"
+      content="Online service to encrypt your data using AES 128 encryption (a plain text, email encryption, facebook messages, twitter, IM messages, etc)"
+    />
+    <meta
+      name="keywords"
+      content="encrypt, free, online, decrypt, blowfish, security, password, service, aes, aes 128"
+    />
+    <style type="text/css">
+      * {
+      }
+    </style>
+    <!--   <script id="facebook-jssdk" src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/all.js"></script> -->
+    <script
+      src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/libs.min.js"
+      type="text/javascript"
+    ></script>
 
-<!--   <script type="text/javascript" charset="utf-8" async="" src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/button.0317b7570df4f1e40626c32ea11afc85.js"></script> -->
-</head>
-<body>
+    <!--   <script type="text/javascript" charset="utf-8" async="" src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/button.0317b7570df4f1e40626c32ea11afc85.js"></script> -->
+  </head>
+  <body>
+    <div
+      id="content"
+      class="container"
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      <script
+        src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/app.min.js"
+        type="text/javascript"
+      ></script>
 
+      <div class="row">
+        <div
+          class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12"
+        >
+          <h2 class="text-center">
+            Online encryption, using best encryption algorithms, works in
+            browser
+          </h2>
+          <p class="lead text-center">
+            Free service to encrypt and decrypt your text message, using AES
+            encryption (with PBKDF2, CBC block and random IV). Implemented in
+            Javascript, works in your browser, use without sending your
+            sensitive information to our servers.
+          </p>
+        </div>
+      </div>
 
-<div id="content" class="container" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
-        <script src="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/app.min.js" type="text/javascript"></script>
+      <div class="row" style="padding-bottom: 20px">
+        <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1">
+          <h2>AES 128</h2>
+          <p>
+            AES (Advanced Encryption Standard), a most popular encryption,
+            approved by the US NSA for internal usage. See
+            <a href="https://www.infoencrypt.com/details">Tech Details</a>
+          </p>
+        </div>
+        <div class="col-lg-5 col-md-5 col-md-offset-1">
+          <h2>No Software Installation</h2>
+          <p>
+            Encrypting in web browser, using Javascript implementation. Doesn't
+            require any installation. All data stays on your computer, nothing
+            transferred to our servers
+          </p>
+        </div>
+      </div>
 
+      <script type="text/ng-template" id="errorModalContent.html">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">{{title}}</h4>
+        </div>
+        <div class="modal-body alert-danger">
+            <p>{{message}}</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="hide()">Close</button>
+        </div>
+      </script>
 
+      <noscript>
+        &lt;div class="row"&gt; &lt;div class="col-lg-10 col-lg-offset-1
+        col-md-10 col-md-offset-1"&gt; &lt;div class="alert alert-danger"&gt;
+        &lt;strong&gt;Javascript is disabled!&lt;/strong&gt; Please enable
+        Javascript for Infoencrypt to use safe in-browser encryption.
+        &lt;br/&gt; You could still use Infoencrypt encryption, but your data
+        will be transmitted to the server to encrypt or decrypt. Also, some
+        features, like "Put to Safe", doesn't work without Javascript.
+        &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
+      </noscript>
 
-        
-
-
-
-
-<div class="row">
-    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
-        <h2 class="text-center">Online encryption, using best encryption algorithms, works in browser</h2>
-        <p class="lead text-center">
-            Free service to encrypt and decrypt your text message, using AES encryption (with PBKDF2, CBC block and random IV). Implemented in Javascript,
-            works in your browser, use without sending your sensitive information to our servers.
-        </p>
-    </div>
-</div>
-
-        <div class="row" style="padding-bottom: 20px">
-            <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1">
-                <h2>AES 128</h2>
-                <p>AES (Advanced Encryption Standard), a most popular encryption, approved by the US NSA for internal usage. See <a href="https://www.infoencrypt.com/details">Tech Details</a></p>
+      <div ng-controller="IndexCtrl" class="ng-scope">
+        <div>
+          <script type="text/ng-template" id="linkModalContent.html">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Link</h4>
             </div>
-            <div class="col-lg-5 col-md-5 col-md-offset-1">
-                <h2>No Software Installation</h2>
-                <p>Encrypting in web browser, using Javascript implementation. Doesn't require any installation. All data stays on your computer, nothing transferred to our servers</p>
+            <div class="modal-body">
+                <p>
+                   Here is a link to your encrypted message: <a href="{{safeUrl}}">{{safeUrl}}</a><br/>
+                </p>
+                <p>Give it other side, share through social networks or whatever</p>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="hide()">Close</button>
+            </div>
+          </script>
+
+          <script type="text/ng-template" id="safeModalContent.html">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Put to Safe</h4>
+            </div>
+            <div class="modal-body">
+                <p>You can save <strong>encrypted</strong> message to the cloud, and the send a link to this encrypted message. Encrypted data will be
+                    publicly available for 90 days for anyone who know correct URL. And only a person
+                    who knows correct password will be able to decrypt original message.
+                </p>
+                <p>You'll get an unique url to encrypted message, that your can give to other people</p>
+                <p>
+                    Encrypted message will be stored on our servers, we still don't know your original message or your password. All encryption is done
+                    on client side, in your browser, and we receive only encrypted copy of a message, without your password.
+                </p>
+                <p><strong>
+                You have to encrypt message on this screen, only after that, when you already have encrypted message, you may click "Put to safe" button
+                </strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="hide()">Cancel</button>
+                <button type="button" class="btn btn-primary" ng-click="send()">Yes, put to the safe</button>
+            </div>
+          </script>
         </div>
 
-        
+        <div class="row">
+          <div class="col-lg-12 col-md-12" id="form">
+            <h1>
+              <i class="icon-lock"></i> Text to encrypt (or encrypted code to
+              decrypt):
+            </h1>
 
-
-
-
-<script type="text/ng-template" id="errorModalContent.html">
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">{{title}}</h4>
-    </div>
-    <div class="modal-body alert-danger">
-        <p>{{message}}</p>
-    </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="hide()">Close</button>
-    </div>
-</script>
-
-
-        <noscript>
-            &lt;div class="row"&gt;
-                &lt;div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1"&gt;
-                    &lt;div class="alert alert-danger"&gt;
-                        &lt;strong&gt;Javascript is disabled!&lt;/strong&gt;
-                        Please enable Javascript for Infoencrypt to use safe in-browser encryption.
-                        &lt;br/&gt;
-                        You could still use Infoencrypt encryption, but your data will be transmitted to
-                        the server to encrypt or decrypt. Also, some features, like "Put to Safe", doesn't work
-                        without Javascript.
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        </noscript>
-
-        <div ng-controller="IndexCtrl" class="ng-scope">
-            <div>
-
-            <script type="text/ng-template" id="linkModalContent.html">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title">Link</h4>
+            <form
+              action="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/Online AES 128 Encrypt and Decrypt - Infoencrypt.Com.html"
+              method="POST"
+              id="frm"
+              class="form ng-pristine ng-valid"
+            >
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="txt"
+                  rows="10"
+                  style="width: 100%"
+                  class="form-control ng-pristine ng-valid"
+                  ng-model="message"
+                ></textarea>
+              </div>
+              <div class="form-group row">
+                <div
+                  class="col-lg-3 col-md-3 col-sm-3"
+                  ng-class="{&#39;has-error&#39;: haveMessage &amp;&amp; !havePass}"
+                >
+                  <label>
+                    Password
+                    <span style="display: flex">
+                      <input
+                        id="first_password"
+                        type="password"
+                        name="password"
+                        class="form-control ng-pristine ng-valid"
+                        ng-model="password"
+                      />
+                      <span
+                        onclick="
+                          let a = this.parentElement.children[0]
+                          a.type === 'password'
+                            ? a.setAttribute('type', 'text')
+                            : a.setAttribute('type', 'password')
+                        "
+                        style="
+                          cursor: help;
+                          margin-left: 0.5em;
+                          line-height: 2.2em;
+                        "
+                        >👁</span
+                      >
+                    </span>
+                  </label>
                 </div>
-                <div class="modal-body">
-                    <p>
-                       Here is a link to your encrypted message: <a href="{{safeUrl}}">{{safeUrl}}</a><br/>
-                    </p>
-                    <p>Give it other side, share through social networks or whatever</p>
+                <div
+                  class="col-lg-3 col-md-3 col-sm-3"
+                  ng-class="{&#39;has-error&#39;: havePass &amp;&amp; !havePassConfirmed &amp;&amp; password2.length &gt; 0}"
+                >
+                  <label>
+                    Confirm Password
+                    <span style="display: flex">
+                      <input
+                        type="password"
+                        name="password2"
+                        class="form-control ng-pristine ng-valid"
+                        ng-model="password2"
+                      />
+                      <span
+                        onclick="
+                          let a = this.parentElement.children[0]
+                          a.type === 'password'
+                            ? a.setAttribute('type', 'text')
+                            : a.setAttribute('type', 'password')
+                        "
+                        style="
+                          cursor: help;
+                          margin-left: 0.5em;
+                          line-height: 2.2em;
+                        "
+                        >👁</span
+                      >
+                    </span>
+                  </label>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="hide()">Close</button>
+                <div class="col-lg-6 col-md-6 col-sm-6 form-actions">
+                  <button
+                    type="submit"
+                    name="submit"
+                    value="Encrypt"
+                    class="btn btn-primary disabled"
+                    ng-click="doEncrypt($event)"
+                    ng-class="{&#39;disabled&#39;: !(haveMessage &amp;&amp; havePass &amp;&amp; havePassConfirmed)}"
+                  >
+                    <i
+                      ng-class="{&#39;icon-lock&#39;: !encrypting, &#39;icon-spinner&#39;: encrypting, &#39;icon-spin&#39;: encrypting}"
+                      class="icon-lock"
+                    ></i>
+                    Encrypt
+                  </button>
+                  <strong>Or</strong>
+                  <button
+                    type="submit"
+                    name="submit"
+                    value="Decrypt"
+                    id="decrypt"
+                    class="btn btn-primary disabled"
+                    ng-click="doDecrypt($event)"
+                    ng-class="{&#39;disabled&#39;: !haveMessage}"
+                  >
+                    <i
+                      ng-class="{&#39;icon-unlock&#39;: !decrypting, &#39;icon-spinner&#39;: decrypting, &#39;icon-spin&#39;: decrypting}"
+                      class="icon-unlock"
+                    ></i>
+                    Decrypt
+                  </button>
                 </div>
-            </script>
-
-            <script type="text/ng-template" id="safeModalContent.html">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title">Put to Safe</h4>
-                </div>
-                <div class="modal-body">
-                    <p>You can save <strong>encrypted</strong> message to the cloud, and the send a link to this encrypted message. Encrypted data will be
-                        publicly available for 90 days for anyone who know correct URL. And only a person
-                        who knows correct password will be able to decrypt original message.
-                    </p>
-                    <p>You'll get an unique url to encrypted message, that your can give to other people</p>
-                    <p>
-                        Encrypted message will be stored on our servers, we still don't know your original message or your password. All encryption is done
-                        on client side, in your browser, and we receive only encrypted copy of a message, without your password.
-                    </p>
-                    <p><strong>
-                    You have to encrypt message on this screen, only after that, when you already have encrypted message, you may click "Put to safe" button
-                    </strong></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="hide()">Cancel</button>
-                    <button type="button" class="btn btn-primary" ng-click="send()">Yes, put to the safe</button>
-                </div>
-            </script>
-
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12 col-md-12" id="form">
-                    <h1><i class="icon-lock"></i> Text to encrypt (or encrypted code to decrypt):</h1>
-
-                    <form action="./Online AES 128 Encrypt and Decrypt - Infoencrypt.Com_files/Online AES 128 Encrypt and Decrypt - Infoencrypt.Com.html" method="POST" id="frm" class="form ng-pristine ng-valid">
-                        <div class="form-group">
-                            <textarea id="message" name="txt" rows="10" style="width: 100%" class="form-control ng-pristine ng-valid" ng-model="message"></textarea>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-lg-3 col-md-3 col-sm-3" ng-class="{&#39;has-error&#39;: haveMessage &amp;&amp; !havePass}">
-                                <label>
-                                    Password
-                                  <span style="display:flex;">
-                                    <input type="password" name="password" class="form-control ng-pristine ng-valid" ng-model="password" />
-                                    <span onclick="let a=this.parentElement.children[0];(a.type==='password')?a.setAttribute('type','text'):a.setAttribute('type','password')" style="cursor:help;margin-left: 0.5em; line-height: 2.2em;">👁</span>
-                                  </span>
-                                </label>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3" ng-class="{&#39;has-error&#39;: havePass &amp;&amp; !havePassConfirmed &amp;&amp; password2.length &gt; 0}">
-                                <label>
-                                    Confirm Password
-                                    <span style="display:flex;">
-                                    <input type="password" name="password2" class="form-control ng-pristine ng-valid" ng-model="password2"/>
-                                    <span onclick="let a=this.parentElement.children[0];(a.type==='password')?a.setAttribute('type','text'):a.setAttribute('type','password')" style="cursor:help;margin-left: 0.5em; line-height: 2.2em;">👁</span>                                      
-                                    </span>
-                                </label>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 form-actions">
-                                <button type="submit" name="submit" value="Encrypt" class="btn btn-primary disabled" ng-click="doEncrypt($event)" ng-class="{&#39;disabled&#39;: !(haveMessage &amp;&amp; havePass &amp;&amp; havePassConfirmed)}">
-                                    <i ng-class="{&#39;icon-lock&#39;: !encrypting, &#39;icon-spinner&#39;: encrypting, &#39;icon-spin&#39;: encrypting}" class="icon-lock"></i> Encrypt
-                                </button>
-                                <strong>Or</strong>
-                                <button type="submit" name="submit" value="Decrypt" class="btn btn-primary disabled" ng-click="doDecrypt($event)" ng-class="{&#39;disabled&#39;: !haveMessage}">
-                                    <i ng-class="{&#39;icon-unlock&#39;: !decrypting, &#39;icon-spinner&#39;: decrypting, &#39;icon-spin&#39;: decrypting}" class="icon-unlock"></i> Decrypt
-                                </button>
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
-    
-</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // 1. Get references to all elements
+    const messageInput = document.getElementById('message')
+    const nextInput = document.getElementById('first_password')
+    const submitBtn = document.getElementById('decrypt')
 
-</body>
+    // 2. Listen for the 'input' event (handles typing AND pasting)
+    messageInput.addEventListener('input', () => {
+      // 3. Optional: Only move focus if the field isn't empty
+      if (messageInput.value.length > 0) {
+        nextInput.focus()
+      }
+    })
+
+    nextInput.addEventListener('keydown', (event) => {
+      // 1. Check if the pressed key is 'Enter'
+      if (event.key === 'Enter') {
+        // 2. Prevent default behavior (like adding a newline if it were a textarea)
+        event.preventDefault()
+
+        // 3. Trigger the button's click event
+        submitBtn.click()
+      }
+    })
+  </script>
 </html>
